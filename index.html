@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleIndex.css">
+    <script src="./js/scriptIndex.js" defer></script>
+    <title>Formas Geométricas</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <div  class="logoCesuca">
+        <a href="https://www.cesuca.edu.br/">
+        <img src="./imagens/capaCesucaSemFundo.png" >
+        </a>
+        </div>
+        <a href="./index.html">
+            <h1>Formas Geométricas</h1>
+        </a>
+        
+    </div>
+
+    <div class="corpo">
+        <div class="quadrado">
+            
+            <h2>Quadrado</h2>
+
+            <button onclick="window.location.href='/html/squadArea.html'">
+                <h1>Área do Quadrado</h1>
+            </button>
+
+            <button onclick="window.location.href='/html/recArea.html'">
+                <h1>Área do Retângulo</h1>
+            </button>
+        </div>
+
+        <div class="circulo">
+            <h2>Círculo</h2>
+
+            <button>
+                <h1>Área do Círculo</h1>
+            </button>
+
+            <button>
+                <h1>Ângulo do Círculo</h1>
+            </button>
+        </div>
+
+        <div class="triangulo">
+            <h2>Triângulo</h2>
+
+            <button>
+                <h1>Área Triangulo</h1>
+            </button>
+
+            <button>
+                <h1>Hipotenusa</h1>
+            </button>
+        </div>
+    </div>
+
+    <div class="rodape">
+        <button onclick="mostrarModalAlunos()">
+            Projeto desenvolvido pelos alunos: <span class="seta">➤</span>
+        </button>
+        <button onclick="mostrarModalProfessor()">
+            Orientação do professor: <span class="seta-prof">➤</span>
+        </button>
+
+        <h2>Todos os direitos reservados 	&copy; Copyright 2024</h2>
+    </div>
+    
+    <div id="modal-alunos" class="modal">
+        <div class="modal-content">
+            <span class="close-alunos">&times;</span>
+            <h2>Projeto desenvolvido pelos alunos:</h2>
+            <ul>
+                <li>Everson Lobato</li>
+                <li>Guilherme Rippel</li>
+                <li>João Ribas</li>
+                <li>Leonardo S. Ruschel</li>
+                <li>Matheus Negrini</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="modal-professor" class="modal">
+        <div class="modal-content">
+            <span class="close-professor">&times;</span>
+            <h2>Orientação do professor:</h2>
+            <p>Professor Nome do Professor</p>
+        </div>
+    </div>
+    
+</body>
+</html>

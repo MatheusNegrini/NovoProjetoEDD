@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.logoCesuca img {
+    width: 80%;
+    height: 40%; 
+    max-width: 150px;
+    align-items: flex-start;
+    display: inline-block;
+    padding-right: 70%;
+    padding-left: 2%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    min-width: 140px;
+    min-height: 70px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: rgb(21, 69, 114);
+    padding-left: 30%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cabecalho {
+    display: flex; 
+    text-align: center;
+    color: white;
+    background-color: #c3c3c3;
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0;
+    font-size: large;
+} 
+
+body {
+    background-color: #fcfcf0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.corpo {
+    margin-top: 150px;
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    text-align: center;  
+}
+
+.corpo img {
+    width: 270px;
+    height: 270px; 
+    object-fit: cover;
+    display: block;
+    margin: 20px; 
+    padding-left: 0; 
+    border-radius: 15px; 
+}
+
+.quadrado, .circulo, .triangulo {
+    min-width: 350px;
+    margin: 30px;
+    font-size: larger;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    padding: 20px;
+    transition: box-shadow 0.3s ease; 
+}
+
+.quadrado:hover{
+    box-shadow: 0 8px 16px orange; 
+}
+
+.circulo:hover{
+    box-shadow: 0 8px 16px blue; 
+}
+
+.triangulo:hover{
+    box-shadow: 0 8px 16px greenyellow;
+}
+
+.corpo h1 {
+    margin: 10px; 
+    text-align: left; 
+    width: 100%; 
+    font-size: medium;
+    font-family: 'Roboto', sans-serif;
+}
+
+.corpo h2{
+    font-family: 'Roboto', sans-serif;
+}
+
+.corpo button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: box-shadow 0.3s ease;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.corpo button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.rodape {
+    background-color: #c3c3c3;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0; 
+    display: flex;
+}
+
+.rodape h2{
+    color: rgb(21, 69, 114);
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 50%;
+}
+
+.rodape button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    color: rgb(21, 69, 114);
+    font-family: 'Roboto', sans-serif;
+}
+
+.seta, .seta-prof {
+    display: inline-block;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Classe para seta virada verticalmente para cima */
+.vertical {
+    transform: rotate(-90deg); /* Girar para cima */
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.close, .close-alunos, .close-professor {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus,
+.close-alunos:hover, .close-alunos:focus,
+.close-professor:hover, .close-professor:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
