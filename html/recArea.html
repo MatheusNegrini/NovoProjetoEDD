@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleGeo.css">
-    <script src="./js/scriptIndex.js" defer></script>
+    <script src="../js/scriptIndex.js" defer></script>
+    <script src="../js/areaRec.js" defer></script>
     <title>Formas Geométricas</title>
 </head>
 <body>
@@ -15,18 +16,18 @@
         </a>
         </div>
         <a href="../index.html">
-            <h1>Área do Quadrado</h1>
+            <h1>Área do Retângulo</h1>
         </a>
         
     </div>
 
     <div class="conteudo">
         <div class= "areaCalc">
-            <h2>Digite a Altura</h2>
+            <h2>Digite a Base</h2>
             <label for="altura">Altura:</label>
             <input type="number" id="altura" name="altura">
 
-            <h2>Digite a Largura</h2>
+            <h2>Digite a Altura</h2>
             <label for="largura">Largura:</label>
             <input type="number" id="largura" name="largura">
 
@@ -39,22 +40,51 @@
         </div>
 
         <div class="explicacao">
-            <h2>Como calcular a área de um quadrado</h2>
-            <p>A fórmula para calcular a área de um quadrado é simples:</p>
-            <p><strong>Área = Lado × Lado</strong></p>
-            <p>Onde "Lado" representa a medida de um dos lados do quadrado.</p>
-            <p>Por exemplo, se cada lado do quadrado tem 4 metros, a área será:</p>
+            <h2>Como calcular a área de um retângulo</h2>
+            <p>A fórmula para calcular a área de um retângulo é simples:</p>
+            <p><strong>Área = Base × Altura</strong></p>
+            <p>Onde "Lado" representa a medida de um dos lados do retângulo.</p>
+            <p>Por exemplo, se cada lado do retângulo tem 4 metros, a área será:</p>
             <p><strong>Área = 4m × 4m = 16m²</strong></p>
+
+            <div class="imagem">
+                <img src="/imagens/quadradoArea.png">
+        
+            </div>
         </div>
     </div>
 
-    <div class="imagem">
-        <img src="/imagens/quadradoArea.png">
+    <div class="rodape">
+        <button onclick="mostrarModalAlunos()">
+            Projeto desenvolvido pelos alunos: <span class="seta">➤</span>
+        </button>
+        <button onclick="mostrarModalProfessor()">
+            Orientação do professor: <span class="seta-prof">➤</span>
+        </button>
 
+        <h2>Todos os direitos reservados 	&copy; Copyright 2024</h2>
     </div>
     
-    <div class="rodape">
-        <h2>rodapé</h2>
+    <div id="modal-alunos" class="modal">
+        <div class="modal-content">
+            <span class="close-alunos">&times;</span>
+            <h2>Projeto desenvolvido pelos alunos:</h2>
+            <ul>
+                <li>Everson Lobato</li>
+                <li>Guilherme Rippel</li>
+                <li>João Ribas</li>
+                <li>Leonardo S. Ruschel</li>
+                <li>Matheus Negrini</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="modal-professor" class="modal">
+        <div class="modal-content">
+            <span class="close-professor">&times;</span>
+            <h2>Orientação do professor:</h2>
+            <p>Arthur Marques de Oliveira</p>
+        </div>
     </div>
 </body>
 </html>

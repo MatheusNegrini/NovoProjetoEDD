@@ -1,18 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const alturaInput = document.getElementById('altura');
-    const larguraInput = document.getElementById('largura');
-    const resultadoInput = document.getElementById('resultado');
-    const calcularButton = document.querySelector('.areaCalc button');
+// areaQuadrado.js
 
-    calcularButton.addEventListener('click', () => {
-        const altura = parseFloat(alturaInput.value);
-        const largura = parseFloat(larguraInput.value);
+document.addEventListener("DOMContentLoaded", () => {
+    const botaoCalcular = document.querySelector("button");
+    const ladoInput = document.getElementById("lado");
+    const resultadoInput = document.getElementById("resultado");
 
-        if (!isNaN(altura) && !isNaN(largura)) {
-            const area = altura * largura;
-            resultadoInput.value = area.toFixed(2); // Arredonda para 2 casas decimais
+    botaoCalcular.addEventListener("click", () => {
+        const lado = parseFloat(ladoInput.value);
+
+        if (!isNaN(lado) && lado > 0) {
+            const area = lado * lado;
+            resultadoInput.value = `${area} m²`;
         } else {
-            resultadoInput.value = 'Por favor, insira valores válidos!';
+            alert("Por favor, insira um valor válido para o lado.");
         }
     });
 });

@@ -152,11 +152,11 @@ body {
     margin: 0 auto; 
 }
 
-.imagem{
-    display: flex;
-    width: 20%;
-    margin-left: 5%;
-    margin-bottom: 10%;
+.explicacao img{
+    width: 35%;
+    align-items: center;
+    display: block;
+    margin: 0 auto;
 }
 
 .rodape {

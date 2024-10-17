@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleGeo.css">
     <script src="../js/scriptIndex.js" defer></script>
-    <script src="../js/areaRec.js" defer></script>
+    <script src="../js/perimeterTriangle.js" defer></script>
     <title>Formas Geométricas</title>
 </head>
 <body>
@@ -16,37 +16,51 @@
         </a>
         </div>
         <a href="../index.html">
-            <h1>Área do Quadrado</h1>
+            <h1>Área do Triângulo</h1>
         </a>
         
     </div>
 
     <div class="conteudo">
-        <div class= "areaCalc">
-            <h2>Digite o Lado</h2>
-            <label for="lado">Lado:</label>
-            <input type="number" id="lado" name="lado">
-
+        <div class="areaCalc">
+            <h2>Digite o Lado 1</h2>
+            <label for="lado2">Lado 1:</label>
+            <input type="number" id="lado1" name="lado1">
+            
+            <h2>Digite o Lado 2</h2>
+            <label for="lado2">Lado 2:</label>
+            <input type="number" id="lado2" name="lado2">
+        
+            <h2>Digite o Lado 3</h2>
+            <label for="lado3">Lado 3:</label>
+            <input type="number" id="lado3" name="lado3">
+        
             <button>
                 Calcular
             </button>
-
-            <label for="resultado" id="resultado-label">Resultado:</label>
+        
+            <label for="resultado" id="resultado">Perímetro:</label>
             <input type="text" id="resultado" name="resultado" readonly>
         </div>
+        
 
         <div class="explicacao">
-            <h2>Como calcular a área de um quadrado</h2>
-            <p>A fórmula para calcular a área de um quadrado é simples:</p>
-            <p><strong>Área = Lado × Lado</strong></p>
-            <p>Onde "Lado" representa a medida de um dos lados do quadrado.</p>
-            <p>Por exemplo, se cada lado do quadrado tem 4 metros, a área será:</p>
-            <p><strong>Área = 4m × 4m = 16m²</strong></p>
+            <h2>Como calcular o perímetro de um triângulo</h2>
+            <p>A fórmula para calcular o perímetro de um triângulo é simples:</p>
+            <p><strong>Perímetro = Lado 1 + Lado 2 + Lado 3</strong></p>
+            <p>Onde "Lado 1", "Lado 2" e "Lado 3" representam as medidas dos três lados do triângulo.</p>
+            <p>Por exemplo, se os lados do triângulo medem 3 metros, 4 metros e 5 metros, o perímetro será:</p>
+            <p><strong>Perímetro = 3m + 4m + 5m = 12m</strong></p>
 
-            <img src="/imagens/quadradoArea.png">
+            
+
+            <div class="imagem">
+                <img src="/imagens/quadradoArea.png">
+        
+            </div>
         </div>
     </div>
-    
+
     <div class="rodape">
         <button onclick="mostrarModalAlunos()">
             Projeto desenvolvido pelos alunos: <span class="seta">➤</span>
