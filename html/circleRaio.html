@@ -5,52 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleGeo.css">
     <script src="../js/scriptIndex.js" defer></script>
-    <script src="../js/areaTriangle.js" defer></script>
+    <script src="../js/raioCircle.js" defer></script>
     <title>Formas Geométricas</title>
 </head>
 <body>
     <div class="cabecalho">
         <div  class="logoCesuca">
         <a href="https://www.cesuca.edu.br/">
-        <img src="../imagens/capaCesucaSemFundo.png" >
+        <img src="../imagens/capaCesucaSemFundo.png">
         </a>
         </div>
         <a href="../index.html">
-            <h1>Área do Triângulo</h1>
+            <h1>Raio do Círculo</h1>
         </a>
-        
     </div>
 
     <div class="conteudo">
-        <div class= "areaCalc">
-            <h2>Digite a Base</h2>
-            <label for="altura">Altura:</label>
-            <input type="number" id="altura" name="altura">
-
-            <h2>Digite a Altura</h2>
-            <label for="largura">Largura:</label>
-            <input type="number" id="largura" name="largura">
-
+        <div class="areaCalc">
+            <h2>Digite o valor do DIÂMETRO</h2>
+            <label for="diametro">Diâmetro:</label>
+            <input type="number" id="diametro" name="diametro">
+            
             <button>
                 Calcular
             </button>
-
-            <label for="resultado" id="resultado-label">Resultado:</label>
+        
+            <label for="resultado">Perímetro:</label>
             <input type="text" id="resultado" name="resultado" readonly>
         </div>
 
         <div class="explicacao">
-            <h2>Como calcular a área de um triângulo</h2>
-            <p>A fórmula para calcular a área de um triângulo é simples:</p>
-            <p><strong>Área = (Base × Altura) ÷ 2</strong></p>
-            <p>Onde "Base" representa a medida da base do triângulo e "Altura" é a altura perpendicular a essa base.</p>
-            <p>Por exemplo, se a base do triângulo mede 4 metros e a altura é 3 metros, a área será:</p>
-            <p><strong>Área = (4m × 3m) ÷ 2 = 6m²</strong></p>
-            
+            <h2>Como calcular o raio de um círculo</h2>
+            <p>A fórmula para calcular o raio de um círculo a partir do diâmetro é simples:</p>
+            <p><strong>Raio = Diâmetro ÷ 2</strong></p>
+            <p>Onde "Diâmetro" representa a medida total de uma extremidade à outra do círculo passando pelo centro.</p>
+            <p>Por exemplo, se o diâmetro do círculo mede 10 metros, o raio será:</p>
+            <p><strong>Raio = 10m ÷ 2 = 5m</strong></p>
+
 
             <div class="imagem">
-                <img src="/imagens/trianguloArea.png">
-        
+                <img src="/imagens/circuloRaio.png">
             </div>
         </div>
     </div>
@@ -63,7 +57,7 @@
             Orientação do professor: <span class="seta-prof">➤</span>
         </button>
 
-        <h2>Todos os direitos reservados 	&copy; Copyright 2024</h2>
+        <h2>Todos os direitos reservados &copy; Copyright 2024</h2>
     </div>
     
     <div id="modal-alunos" class="modal">
