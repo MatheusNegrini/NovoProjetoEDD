@@ -13,17 +13,18 @@
     min-height: 70px;
 }
 
+
 .tituloSite{    
-    text-align: center; /* Centraliza o texto dentro do elemento */
-    font-family: 'Roboto', sans-serif; /* Mantém a fonte consistente */
-    font-size: larger; /* Ajusta o tamanho da fonte conforme necessário */
-    padding-left: 30%;
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    font-size: larger; 
+    padding-left: 25%;
     padding-bottom: 0;
 }
 
 @media (max-width: 768px) {
     .tituloSite {
-        font-size: larger; /* Ajuste o tamanho da fonte conforme necessário */
+        font-size: larger; 
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -32,8 +33,8 @@
         padding-left: 150px;
     }
     
-
-
+    
+    
 }
 
 
@@ -65,6 +66,10 @@
     right: 0;
     font-size: large;
 } 
+
+.logoCesuca{
+    padding-left: 1%;
+}
 
 body {
     background-color: #fcfcf0;
