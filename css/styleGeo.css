@@ -23,7 +23,7 @@
 
 @media (max-width: 768px) {
     .tituloSite {
-        font-size: larger; /* Ajuste o tamanho da fonte conforme necessário */
+        font-size: larger; 
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -239,12 +239,12 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Classe para seta virada verticalmente para cima */
+
 .vertical {
-    transform: rotate(-90deg); /* Girar para cima */
+    transform: rotate(-90deg); 
 }
 
-/* Estilos para o modal */
+
 .modal {
     display: none;
     position: fixed;

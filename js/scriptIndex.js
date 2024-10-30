@@ -1,5 +1,3 @@
-// scriptIndex.js
-
 // Obter os modais
 var modalAlunos = document.getElementById("modal-alunos");
 var modalProfessor = document.getElementById("modal-professor");
