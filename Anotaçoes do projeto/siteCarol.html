@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Aleatório</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden; /* Evita scrollbars */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #156995;
+            color: white;
+            position: absolute; /* Permite posicionamento livre */
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #104a70;
+        }
+    </style>
+</head>
+<body>
+    <button id="randomButton" onclick="moverBotao()">Clique aqui!</button>
+    <script>
+        function moverBotao() {
+            const button = document.getElementById("randomButton");
+            const maxX = window.innerWidth - button.offsetWidth;
+            const maxY = window.innerHeight - button.offsetHeight;
+            const randomX = Math.floor(Math.random() * maxX);
+            const randomY = Math.floor(Math.random() * maxY);
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+        }
+
+        // Move o botão para uma posição inicial aleatória
+        moverBotao();
+    </script>
+</body>
+</html>
